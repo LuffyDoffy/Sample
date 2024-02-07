@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+    body, h1, p, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Universal selector */
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Element selector */
+    h1 {
+      color: #333;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: #ffcc00;
+    }
+
+    /* ID selector */
+    #unique {
+      border: 2px solid #0088cc;
+      padding: 10px;
+    }
+
+    /* Attribute selector */
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+    }
+
+    /* Pseudo-class selector */
+    a:hover {
+      color: #ff6600;
+    }
+
+    /* Pseudo-element selector */
+    p::first-line {
+      font-weight: bold;
+    }
+
+    /* Box model */
+    .box-model-example {
+      margin: 20px;
+      border: 2px solid #009900;
+      padding: 15px;
+    }
+
+    /* Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .flex-item {
+      flex: 1;
+      padding: 20px;
+      border: 2px solid #990099;
+      margin: 10px;
+    }
+
+    /* CSS Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .grid-item {
+      padding: 20px;
+      border: 2px solid #0099cc;
+      text-align: center;
+    }
+  </style>
+  <title>CSS Selectors & Layouts</title>
+</head>
+<body>
+
+  <h1>Webpage with CSS Selectors & Layouts</h1>
+
+  <!-- Element, Class, and ID selectors -->
+  <div class="highlight" id="unique">
+    <p>This is a paragraph with a <span class="highlight">highlighted</span> text.</p>
+  </div>
+
+  <!-- Attribute and Pseudo-class selectors -->
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  </form>
+
+  <!-- Pseudo-element selector -->
+  <p>This is the first line of a paragraph. The rest follows...</p>
+
+  <!-- Box model example -->
+  <div class="box-model-example">
+    <p>Box model example with margins, borders, and padding.</p>
+  </div>
+
+  <!-- Flexbox example -->
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- CSS Grid example -->
+  <div class="grid-container">
+    <div class="grid-item">Grid Item 1</div>
+    <div class="grid-item">Grid Item 2</div>
+    <div class="grid-item">Grid Item 3</div>
+    <div class="grid-item">Grid Item 4</div>
+    <div class="grid-item">Grid Item 5</div>
+    <div class="grid-item">Grid Item 6</div>
+  </div>
+
+</body>
+</html>
